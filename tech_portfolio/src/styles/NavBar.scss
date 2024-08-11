@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.nav-container {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    $laptop: 1024px;
+  
+    .lg-links {
+      display: none;
+      font-size: 1.8rem;
+      @media screen and (min-width: $laptop) {
+        display: flex;
+      }
+      a {
+        margin-left: 20px;
+      }
+    }
+  
+    .sm-active {
+      display: flex;
+      @media screen and (min-width: $laptop) {
+        display: none;
+      }
+    }
+  }
+  
+  .home-icon {
+    font-size: 50px;
+    padding: 40px;
+    position: relative;
+    right: 2px;
+    color: black;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 15px;
+    text-decoration: none !important;
+  }
+  
+  .download-resume {
+    margin-top: -5px;
+    text-decoration: none; 
+  }
+  .name{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin: 40px;
+  }

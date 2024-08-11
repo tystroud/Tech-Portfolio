@@ -1,0 +1,27 @@
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    perspective: 1000px;
+    margin-left: 10%;
+  
+    .skill-icon {
+      font-size: 50px;
+      transition: transform 0.3s ease-in-out;
+      &:hover {
+        transform: rotateY(360deg);
+      }
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotateX(0deg);
+    }
+    100% {
+      transform: rotateX(360deg);
+    }
+  }
+  
