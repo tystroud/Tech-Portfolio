@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import '../styles/Contact.scss'
 
 const Contact = () => {
   const { register, handleSubmit } = useForm();
@@ -14,7 +15,7 @@ const Contact = () => {
   return (
     <main className="contact-container">
       <section className="border border-2 p-2 rounded-md form-container">
-      <h2 className="text-2xl font-medium text-center">Contact Form</h2>
+      <h2 className="text-2xl font-medium text-center">Let's Connect</h2>
       <p className="text-lg text-center">If you are interested in my work, fill out this form below</p>
       <form onSubmit={handleSubmit(onSubmit)}>
       <label htmlFor="email">
@@ -54,3 +55,5 @@ const Contact = () => {
 }
 
 export default Contact
+
+

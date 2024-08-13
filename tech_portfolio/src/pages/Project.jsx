@@ -1,5 +1,6 @@
 import WeatherApp from '../images/ProjectPic2.png'
 import Vitality from '../images/ProjectPic1.png'
+import '../styles/Project.scss'
 
 
 const myProjects = [

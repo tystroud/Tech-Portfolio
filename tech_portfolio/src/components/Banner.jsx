@@ -9,8 +9,8 @@ const Banner = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const toRotate = useMemo(() => [ "Full Stack Developer", "UI/UX Designer", "DevOps Engineer"], []);
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(800 - Math.random()*100);
-    const period = 2000;
+    const [delta, setDelta] = useState(400 - Math.random()*100);
+    const period = 1000;
 
     const tick = useCallback(() => { 
         let i = loopNum % toRotate.length;
@@ -29,7 +29,7 @@ const Banner = () => {
         } else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
-            setDelta(500);
+            setDelta(100);
         }
     }, [isDeleting, loopNum, period, text, toRotate]);
 
@@ -48,7 +48,8 @@ const Banner = () => {
             <Row className='banner-row'>
                 <Col>
                     <span className='tagline'>Welcome to My Portfolio</span>
-                    <h1>{`Hi! I'm Ty, a `}<span className='wrap'>{text}</span></h1>
+                    <h1>Hi, I'm Ty!</h1>
+                    <h1>{`I'm a `}<span className='wrap'>{text}</span></h1>
                     <div className='about-me'> 
                         <p>Based in Atlanta, Ga &#127944;GO FALCONS&#127944; I find passion in building web applications and experimenting with new technologies. My journey in the realm of technology has been fueled by my deep love for coding and problem-solving</p>
 
