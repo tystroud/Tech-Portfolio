@@ -1,36 +1,105 @@
 .contact-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    $laptop: 1024px;
-    .form-container {
-      width: 90%;
-      @media screen and (min-width: $laptop) {
-        width: 800px;
-      }
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  $laptop: 1024px;
+
+  .form-container {
+    width: 90%;
+    padding: 1rem;
+    
+    @media screen and (min-width: $laptop) {
+      width: 800px;
     }
+
+    h1 {
+      font-size: 50px;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: white;
+      text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #bf40bf,
+      0 0 30px #bf40bf,
+      0 0 40px #bf40bf,
+  
+    }
+
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: white;
+    }
+
     form {
       display: flex;
       flex-direction: column;
-      button[type='submit'] {
-        height: 50px;
-        border: solid 1px black;
+
+      label {
+        margin-bottom: 1rem;
+
+        p {
+          font-size: 1.2em;
+          margin-bottom: 20px;
+        }
       }
-      input[type='text'], input[type='email'], textarea {
-        margin-bottom: 10px;
-        border: solid 1px black;
+
+      input[type='text'],
+      input[type='email'],
+      textarea {
+        margin-bottom: 20px;
+        border: solid 1px white;
         width: 100%;
         padding: 5px;
         border-radius: 5px;
+        box-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #bf40bf,
+        0 0 30px #bf40bf,
+        0 0 40px #bf40bf,
       }
+
       textarea {
         resize: none;
         height: 150px;
       }
-      p {
-        font-size: 1.2em;
-        margin-bottom: 5px;
+
+      button[type='submit'] {
+        height: 50px;
+        border: solid 1px #bf40bf;
+        background-color: #f0f0f0;
+        box-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #bf40bf,
+        0 0 30px #bf40bf,
+        0 0 40px #bf40bf;
+        border-radius: 5px;
+        cursor: pointer;
+        background: linear-gradient(90deg, #bf40bf, #cc8899, #e599ff, #bf00ff);
+          background-size: 500%;
+          z-index: 1;
+          animation: blink 7s linear infinite;
+          opacity: 1;
+
+        &:hover {
+          background: #bf40bf
+        }
+
+        @keyframes blink{
+          from{
+            background-position: 0%;
+          }
+          to{
+            background-position: 500%;
+          }
+        }
       }
     }
   }
+}

@@ -3,7 +3,15 @@
   font-size: 60px;
   padding-bottom: 50px;
   padding-top: 30px;
-  color: #081b29;
+  color: white;
+  text-shadow: 
+  0 0 5px #fff,
+  0 0 10px #081b29,
+  0 0 20px #ffbf00,
+  0 0 30px #ffbf00,
+  0 0 40px #ffbf00,
+  0 0 50px #ffbf00,
+  0 0 60px #ffbf00;
 }
 
 .skills-grid {
@@ -14,19 +22,11 @@
     padding: 50px;
     perspective: 1000px;
     margin-left: 10%;
-    text-shadow: 
-    0 0 5px #fff,
-    0 0 10px #fff,
-    0 0 20px #fff,
-    0 0 30px #ffff00,
-    0 0 40px #ffff00,
-    0 0 50px #ffff00,
-    0 0 60px #ffff00;
-
-
+   
   .skill-icon {
-    font-size: 50px;
+    font-size: 60px;
     transition: transform 0.3s ease-in-out;
+    color: #ffbf00;
     &:hover {
       transform: rotateY(360deg);
     }
@@ -52,7 +52,16 @@
 .skills-name h3 {
   margin-left: 20%;
   font-size: 24px;
-  color: #081b29;
+  color: white;
+  text-shadow: 
+  0 0 5px #fff,
+  0 0 10px #fff,
+  0 0 20px #fff,
+  0 0 30px #ffbf00,
+  0 0 40px #ffbf00,
+  0 0 50px #ffbf00,
+  0 0 60px #ffbf00;
+
 }
 
 .skills-figma-line,
@@ -66,7 +75,7 @@
   display: block;
   height: 5px;
   border-radius: 10px;
-  background-color: #081b29;
+  background-color: white;
   animation: animate 2s cubic-bezier(1, 0, 0.5, 1) forwards;
   transform: scaleX(0);
   transform-origin: left;
@@ -80,7 +89,7 @@
 .skills-python-line span,
 .skills-git-line span{
   height: 100%;
-  background-color: rgb(255, 165, 0);
+  background-color: #ffbf00;
   position: absolute;
   border-radius: 10px;
   animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
@@ -138,9 +147,17 @@
 .skills-git-line span::after{
   position: absolute;
   padding: 1px 8px;
-  background-color: #081b29;
-  color: whitesmoke;
-  font-size: 12px;
+  background-color: #ffbf00;
+  color: #081b29;
+  text-shadow: 
+  0 0 5px #fff,
+  0 0 10px #fff,
+  0 0 20px #fff,
+  0 0 30px #ffbf00,
+  0 0 40px #ffbf00,
+  0 0 50px #ffbf00,
+  0 0 60px #ffbf00;
+  font-size: 12px bold;
   border-radius: 3px;
   top: -28px;
   right: -20px;
@@ -201,4 +218,8 @@
   100%{
     opacity: 1;
   }
+}
+
+.react-icon{
+  color: white;
 }

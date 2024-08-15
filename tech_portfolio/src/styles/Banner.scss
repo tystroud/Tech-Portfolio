@@ -2,8 +2,8 @@
     padding: 60px;
   
     .tagline {
-      font-size: 1.5rem;
-      color: #007bff;
+      font-size: 27px;
+      color: #1a4df7;
       margin-bottom: 20px;
       display: inline-block;
     }
@@ -13,10 +13,19 @@
       margin: 0;
       font-weight: bold;
       line-height: 1.2;
+      color: white;
   
       .wrap {
-        border-bottom: 2px solid #007bff;
+        border-bottom: 2px solid;
         padding-bottom: 5px;
+        text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #1a4df7,
+        0 0 30px #1a4df7,
+        0 0 40px #1a4df7,
+        0 0 50px #1a4df7,
+        0 0 60px #1a4df7;
       }
     }
   
@@ -24,6 +33,7 @@
       font-size: 1.2rem;
       margin-top: 20px;
       margin-bottom: 30px;
+      color: white;
     }
   
     button {
@@ -35,18 +45,37 @@
       border-radius: 5px;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      cursor: pointer;
+        background: linear-gradient(90deg, #0056b3, #40c4ff, #81d4f4, #002966 );
+          background-size: 500%;
+          z-index: 1;
+          animation: blink 7s linear infinite;
+          opacity: 1;
   
       &:hover {
-        background-color: #0056b3;
+        background: #0056b3;
+      }
+      @keyframes blink{
+        from{
+          background-position: 0%;
+        }
+        to{
+          background-position: 500%;
+        }
       }
     }
   
     img {
       max-width: 30%;
       border-radius: 50%;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #1a4df7,
+      0 0 30px #1a4df7,
+      0 0 40px #1a4df7;
       margin-left: 60%;
-      margin-top: -20%;
+      margin-top: -29%;
       display: block;
     }
   }

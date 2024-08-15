@@ -21,19 +21,22 @@ const myProjects = [
 ];
 const Projects = () => {
   return (
-    <main className="projects-container">
+    <><h1 className='project-title'>Projects</h1>
+    <div className="projects-container">
       {myProjects.map((project) => (
-        <section key={project.title} className="project-item border border-2 rounded-lg">
+        <section key={project.title} className="project-item">
           <section className="project-image-container">
             <img src={project.image} alt={project.title} className="project-image"/>
           </section>
           <h2 className="text-xl font-semibold">{project.title}</h2>
           <p className="text-lg">{project.description}</p>
-          <p>Check out the link to the project repository <a href={project.repositoryLink} target="_blank">Here</a> </p>
+          <p>Check out the link to the project repository <a href={project.repositoryLink} target="_blank" rel='noreferrer'>Here</a> </p>
 
         </section>
       ))}
-    </main>
+    </div>
+    </>
+  
   )
 }
 

@@ -1,8 +1,6 @@
 import React from 'react'
 import '../styles/NavBar.scss'
 import {NavLink, Link} from "react-router-dom"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faMicrochip, faDownload } from '@fortawesome/free-solid-svg-icons'
 import DownloadResume from './DownloadResume'
 
 
@@ -13,14 +11,14 @@ const NavBar = () => {
         <h2 className='name'>Tyeisha Stroud</h2>
         <Link to='/' className='home-link'>
           <div className='home-icon'>
-            <FontAwesomeIcon icon={faMicrochip} className='button'/>
+            <span class="material-symbols-outlined" style={{ fontSize: '50px'}}>memory</span>
           </div>
         </Link>
       <div className='nav-links'>
         <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/contact">Contact</NavLink>
         <DownloadResume className='download-resume'/>
-        <FontAwesomeIcon icon={faDownload} className='download-icon'/>
+        <span class="material-symbols-outlined neon icon">download</span>
       </div>  
       </div>
     </>
