@@ -11,8 +11,10 @@ const NavBar = () => {
     <>
       <div className='nav-container'>
         <h2 className='name'>Tyeisha Stroud</h2>
-        <Link to='/' className='home-icon'>
-          <FontAwesomeIcon icon={faMicrochip} className='home-icon'/>
+        <Link to='/' className='home-link'>
+          <div className='home-icon'>
+            <FontAwesomeIcon icon={faMicrochip} className='button'/>
+          </div>
         </Link>
       <div className='nav-links'>
         <NavLink to="/projects">Projects</NavLink>

@@ -1,15 +1,14 @@
-import './App.css';
+import './App.scss';
 import NavBar from './components/NavBar';
 import Home from './pages/Home.jsx'
 import ColoredMouse from './components/ColoredMouse'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Contact from './pages/Contact';
-import Skills from './components/Skills.jsx';
 import Projects from './pages/Project.jsx';
 
 function App() {
   return (
-    <>
+    <div className='app'>
       <ColoredMouse/>
       <Router>
         <NavBar/>
@@ -19,7 +18,7 @@ function App() {
           <Route path="/contact" element={<Contact/>}/>
         </Routes>
       </Router>
-    </> 
+    </div> 
   );
 }
 

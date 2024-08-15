@@ -1,21 +1,38 @@
+.skills-title {
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  color: #081b29;
+}
+
 .skills-grid {
-    display: grid;
+  display: grid;
     grid-template-columns: repeat(7, 1fr);
     justify-content: center;
     align-items: center;
     padding: 50px;
     perspective: 1000px;
     margin-left: 10%;
-  
-    .skill-icon {
-      font-size: 50px;
-      transition: transform 0.3s ease-in-out;
-      &:hover {
-        transform: rotateY(360deg);
-      }
+    text-shadow: 
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 30px #ffff00,
+    0 0 40px #ffff00,
+    0 0 50px #ffff00,
+    0 0 60px #ffff00;
+
+
+  .skill-icon {
+    font-size: 50px;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: rotateY(360deg);
     }
+
   }
-  
+
   @keyframes rotate {
     0% {
       transform: rotateX(0deg);
@@ -24,4 +41,164 @@
       transform: rotateX(360deg);
     }
   }
+
+}
+
+.skills-bar {
+  width: 80%;
+  margin-top: 40px auto;
+}
+
+.skills-name h3 {
+  margin-left: 20%;
+  font-size: 24px;
+  color: #081b29;
+}
+
+.skills-figma-line,
+.skills-react-line,
+.skills-html-line,
+.skills-css-line,
+.skills-javascript-line,
+.skills-python-line,
+.skills-git-line{
+  position: relative;
+  display: block;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #081b29;
+  animation: animate 2s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+  margin-left: 20%;
+}
+.skills-figma-line span,
+.skills-html-line span,
+.skills-react-line span,
+.skills-css-line span,
+.skills-javascript-line span,
+.skills-python-line span,
+.skills-git-line span{
+  height: 100%;
+  background-color: rgb(255, 165, 0);
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.skills-figma-line span{
+  width: 75%;
+  animation-delay: 0s;
+}
+
+.skills-react-line span{
+  width: 75%;
+  animation-delay: 0.5s;
+}
+
+.skills-html-line span{
+  width: 90%;
+  animation-delay: 1s;
+}
+
+.skills-css-line span{
+  width: 87%;
+  animation-delay: 1s;
+}
+
+.skills-javascript-line span{
+  width: 84%;
+  animation-delay: 1s;
+}
+
+.skills-python-line span{
+  width: 66%;
+  animation-delay: 1s;
+}
+
+.skills-git-line span{
+  width: 73%;
+  animation-delay: 1s;
+}
+
+.skills-figma-line span::after,
+.skills-html-line span::after,
+.skills-react-line span::after,
+.skills-css-line span::after,
+.skills-javascript-line span::after,
+.skills-python-line span::after,
+.skills-git-line span::after{
+  position: absolute;
+  padding: 1px 8px;
+  background-color: #081b29;
+  color: whitesmoke;
+  font-size: 12px;
+  border-radius: 3px;
+  top: -28px;
+  right: -20px;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+
+.skills-figma-line span::after{
+  content: "75%";
+}
+
+.skills-react-line span::after{
+  content: "75%";
+}
+
+.skills-html-line span::after{
+  content: "90%";
   
+}
+
+.skills-css-line span::after{
+  content: "87%";
+}
+
+.skills-javascript-line span::after{
+  content: "84%";
+}
+
+.skills-python-line span::after{
+  content: "66%";
+}
+
+.skills-git-line span::after{
+  content: "73%";
+}
+
+.skills-figma-line::before,
+.skills-html-line::before,
+.skills-react-line::before,
+.skills-css-line::before,
+.skills-javascript-line::before,
+.skills-python-line::before,
+.skills-git-line::before{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #081b29;
+  top: -10px;
+  right: 0;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+
+@keyframes showText{
+  100%{
+    opacity: 1;
+  }
+}

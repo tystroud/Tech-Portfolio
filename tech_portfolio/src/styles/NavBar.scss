@@ -1,59 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 .nav-container {
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    $laptop: 1024px;
-  
-    .lg-links {
-      display: none;
-      font-size: 1.8rem;
-      @media screen and (min-width: $laptop) {
-        display: flex;
-      }
-      a {
-        margin-left: 20px;
-      }
-    }
-  
-    .sm-active {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  $laptop: 1024px;
+  font-size: 30px;
+  text-shadow: 
+  0 0 5px #fff,
+  0 0 10px #fff,
+  0 0 20px #1a4df7,
+  0 0 30px #1a4df7,
+  0 0 40px #1a4df7,
+  0 0 50px #1a4df7,
+  0 0 60px #1a4df7;
+
+  .lg-links {
+    display: none;
+    font-size: 1.8rem;
+    @media screen and (min-width: $laptop) {
       display: flex;
-      @media screen and (min-width: $laptop) {
-        display: none;
-      }
+    }
+    a {
+      margin-left: 20px;
     }
   }
-  
-  .home-icon {
-    font-size: 50px;
-    padding: 40px;
-    position: relative;
-    right: 2px;
-    color: black;
-  }
-  
-  .nav-links {
+
+  .sm-active {
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    gap: 15px;
-    text-decoration: none !important;
+    @media screen and (min-width: $laptop) {
+      display: none;
+    }
   }
+}
+
+.home-link {
+  font-size: 50px;
+  padding: 40px;
+  position: relative;
+  right: 2px;
+  color: white;
+  }
+
+
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.download-resume {
+  margin-top: -5px;
+  text-decoration: none; 
   
-  .download-resume {
-    margin-top: -5px;
-    text-decoration: none; 
+  .download-icon{
+    color: white;
   }
-  .name{
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    margin: 40px;
-  }
+}
+
+.name {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin: 40px;
+  color: white;
+}
