@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/NavBar.scss'
-import {NavLink, Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 import DownloadResume from './DownloadResume'
 
 
@@ -15,8 +15,8 @@ const NavBar = () => {
           </div>
         </Link>
       <div className='nav-links'>
-        <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+        <a href='#projects'>Projects</a>
+        <a href='#contact'>Contact</a>
         <DownloadResume className='download-resume'/>
         <span class="material-symbols-outlined neon icon">download</span>
       </div>  

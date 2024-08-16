@@ -22,11 +22,13 @@
     padding: 50px;
     perspective: 1000px;
     margin-left: 10%;
+    filter: drop-shadow(15px 1px 3px #ffbf00);
    
   .skill-icon {
     font-size: 60px;
     transition: transform 0.3s ease-in-out;
-    color: #ffbf00;
+    color: white;
+    
     &:hover {
       transform: rotateY(360deg);
     }
@@ -52,16 +54,11 @@
 .skills-name h3 {
   margin-left: 20%;
   font-size: 24px;
-  color: white;
+  color: rgb(236, 234, 234);
   text-shadow: 
   0 0 5px #fff,
-  0 0 10px #fff,
-  0 0 20px #fff,
   0 0 30px #ffbf00,
   0 0 40px #ffbf00,
-  0 0 50px #ffbf00,
-  0 0 60px #ffbf00;
-
 }
 
 .skills-figma-line,
@@ -75,7 +72,7 @@
   display: block;
   height: 5px;
   border-radius: 10px;
-  background-color: white;
+  background-color: rgb(66, 64, 64);
   animation: animate 2s cubic-bezier(1, 0, 0.5, 1) forwards;
   transform: scaleX(0);
   transform-origin: left;

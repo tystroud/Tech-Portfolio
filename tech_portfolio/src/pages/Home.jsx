@@ -75,7 +75,7 @@ const Home = () => {
         <Skills />
       </motion.div>
 
-      <motion.div
+      <motion.div id='projects'
         ref={projectsRef}
         variants={motionVariants}
         initial="hidden"
@@ -85,7 +85,7 @@ const Home = () => {
         <Projects/>
       </motion.div>
 
-      <motion.div
+      <motion.div id='contact'
         ref={contactRef}
         variants={motionVariants}
         initial="hidden"
