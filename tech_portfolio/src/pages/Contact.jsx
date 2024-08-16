@@ -17,7 +17,8 @@ const Contact = () => {
     <main className="contact-container">
       <section className="form-container">
         <h1>Let's Connect</h1>
-        <p>If you are interested in my work, fill out this form below</p>
+        <p>I am currently available to join a team or company.
+        Additionally, I am looking for collaborations to develop apps and expand my expertise as a full stack developer. Please feel free to contact me for any questions or to simply say hi.</p>
         <form onSubmit={handleSubmit(onSubmit)}>
           <label htmlFor="email">
             <p>Your Email</p>
