@@ -2,11 +2,17 @@ import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFigma, faReact, faHtml5, faCss3Alt, faJs, faPython, faGithub} from '@fortawesome/free-brands-svg-icons'
 import '../styles/Skills.scss'
+import { motion } from 'framer-motion'
+import { fadeIn } from './motion';
 
 const Skills = () => {
     return (
       <div className='skills'>
-        <h2 className='skills-title'>Technical Skills</h2>
+        <motion.h2 className='skills-title'
+        variants={fadeIn("up", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.5}}>Technical Skills</motion.h2>
         <div className='skills-grid'>
           <FontAwesomeIcon icon={faFigma} className='skill-icon' />
           <FontAwesomeIcon icon={faReact} className='skill-icon' />
@@ -17,7 +23,11 @@ const Skills = () => {
           <FontAwesomeIcon icon={faGithub} className='skill-icon' />
           </div>
 
-          <div className='skills-bar'>
+          <motion.div className='skills-bar'
+          variants={fadeIn('down', 0.10)}
+          initial="hidden"
+          animate="show"
+          viewport={{once: false, amount: 0.10}}>
 
             <div className='skills-name'>
               <h3>Figma</h3>
@@ -68,7 +78,7 @@ const Skills = () => {
               <span></span>
             </div>
 
-          </div>
+          </motion.div>
       </div>
     )
   }

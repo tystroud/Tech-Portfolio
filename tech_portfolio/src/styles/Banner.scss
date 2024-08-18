@@ -41,16 +41,16 @@
       padding: 10px 20px;
       color: #fff;
       background-color: #007bff;
-      border: none;
+      border: solid 0.5px white;
       border-radius: 5px;
       cursor: pointer;
       transition: background-color 0.3s ease;
       cursor: pointer;
-        background: linear-gradient(90deg, #0056b3, #40c4ff, #81d4f4, #002966 );
-          background-size: 500%;
-          z-index: 1;
-          animation: blink 7s linear infinite;
-          opacity: 1;
+      background: linear-gradient(90deg, #40c4ff, #81d4f4, #007bff, #002966 );
+      background-size: 500%;
+      z-index: 1;
+      animation: blink 7s linear infinite;
+      opacity: 1;
   
       &:hover {
         background: #0056b3;

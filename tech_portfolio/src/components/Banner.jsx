@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import '../styles/Banner.scss';
 import { Container, Row, Col } from "react-bootstrap";
 import profilePic from '../images/profilepic.PNG';
+import { motion } from 'framer-motion'
+import { fadeIn } from './motion';
 
 const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -48,21 +50,41 @@ const Banner = () => {
             <Container>
                 <Row className='banner-row'>
                     <Col>
-                        <span className='tagline'>Welcome to My Portfolio</span>
+                        <motion.span className='tagline' 
+                        variants={fadeIn("up", 0.2)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{once: false, amount: 0.7}}>
+                            Welcome to My Portfolio
+                        </motion.span>
+
                         <h1>Hi, I'm Ty!</h1>
-                        <h1>{`I'm a `}<span className='wrap'>{text}</span></h1>
-                        <div className='about-me'> 
+                        <motion.h1 
+                        variants={fadeIn("left", 0.3)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{once: false, amount: 0.5}}>{`I'm a `}<span className='wrap'>{text}</span></motion.h1>
+
+                        <motion.div className='about-me'
+                        variants={fadeIn("right", 0.4)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{once: false, amount: 0.4}}> 
                             <p>Based in Atlanta, Ga &#127944;GO FALCONS&#127944; I find passion in building web applications and experimenting with new technologies. My journey in the realm of technology has been fueled by my deep love for coding and problem-solving</p>
 
                             <p>In my spare time I like to run around in the fresh grass with my active 2-year-old son Geno - mostly so he doesn't break anything in the house, take a good ol' pilates class, or spend time on all popular tech sites learning a new tech hack/trick.</p>
 
                             <p>I hope you enjoy browsing my portfolio, and I look forward to the opportunity to bring your next projects to life.</p>
-                        </div>
+                        </motion.div>
                         
                         <button onClick={() => navigate('/contact')}>Let's Connect</button> 
                     </Col>
                     <Col>
-                        <img src={profilePic} alt='profile pic'/>
+                        <motion.img src={profilePic} alt='profile pic'
+                        variants={fadeIn("left", 0.6)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{once: false, amount: 0.9}}/>
                     </Col>
                 </Row>
             </Container>
