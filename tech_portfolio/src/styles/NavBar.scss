@@ -10,21 +10,24 @@
   z-index: 100;
   $laptop: 1024px;
   font-size: 30px;
+  position: relative;
   text-shadow: 
-  0 0 5px #fff,
-  0 0 10px #fff,
-  0 0 20px #1a4df7,
-  0 0 30px #1a4df7,
-  0 0 40px #1a4df7,
-  0 0 50px #1a4df7,
-  0 0 60px #1a4df7;
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #1a4df7,
+    0 0 30px #1a4df7,
+    0 0 40px #1a4df7,
+    0 0 50px #1a4df7,
+    0 0 60px #1a4df7;
 
   .lg-links {
     display: none;
     font-size: 1.8rem;
+
     @media screen and (min-width: $laptop) {
       display: flex;
     }
+
     a {
       margin-left: 20px;
     }
@@ -32,33 +35,32 @@
 
   .sm-active {
     display: flex;
+
     @media screen and (min-width: $laptop) {
       display: none;
     }
   }
 }
 
-  .home-icon{
+.home-icon {
   text-shadow: 
-  0 0 5px #fff,
-  0 0 10px #fff,
-  0 0 20px #1a4df7,
-  0 0 30px #1a4df7,
-  0 0 40px #1a4df7,
-  0 0 50px #1a4df7,
-  0 0 60px #1a4df7;
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #1a4df7,
+    0 0 30px #1a4df7,
+    0 0 40px #1a4df7,
+    0 0 50px #1a4df7,
+    0 0 60px #1a4df7;
   padding: 40px;
   position: relative;
   right: 2px;
   color: white;
-  }
-
-
+}
 
 .nav-links {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   gap: 15px;
 }
 
@@ -71,7 +73,7 @@ a {
   margin-top: -5px;
   text-decoration: none;
   color: white;
-  }
+}
 
 .name {
   font-family: "Dancing Script", cursive;
@@ -82,7 +84,55 @@ a {
   color: white;
 }
 
-.icon{
+.icon {
   color: white;
   font-size: 25px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+
+@media (max-width: 767px) {
+  .nav-container {
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px; 
+    font-size: 5vw; 
+  }
+
+  .home-icon {
+    padding: 20px; 
+    font-size: 8vw; 
+  }
+
+  .nav-links {
+    flex-direction: column; 
+    gap: 10px; 
+    display: none;
+  }
+
+  .name {
+    font-size: 7vw; 
+    margin: 20px 0; 
+  }
+
+  .icon {
+    font-size: 6vw; 
+  }
+
+  .download-resume {
+    margin-top: 10px; 
+    font-size: 4.5vw; 
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-container.open .nav-links {
+    display: flex;
+  }
 }
