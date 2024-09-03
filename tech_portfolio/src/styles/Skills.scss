@@ -5,34 +5,33 @@
   padding-top: 30px;
   color: white;
   text-shadow: 
-  0 0 5px #fff,
-  0 0 10px #081b29,
-  0 0 20px #ffbf00,
-  0 0 30px #ffbf00,
-  0 0 40px #ffbf00,
-  0 0 50px #ffbf00,
-  0 0 60px #ffbf00;
+    0 0 5px #fff,
+    0 0 10px #081b29,
+    0 0 20px #ffbf00,
+    0 0 30px #ffbf00,
+    0 0 40px #ffbf00,
+    0 0 50px #ffbf00,
+    0 0 60px #ffbf00;
 }
 
 .skills-grid {
   display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    perspective: 1000px;
-    margin-left: 10%;
-    filter: drop-shadow(15px 1px 3px #ffbf00);
-   
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  perspective: 1000px;
+  margin-left: 10%;
+  filter: drop-shadow(15px 1px 3px #ffbf00);
+
   .skill-icon {
     font-size: 60px;
     transition: transform 0.3s ease-in-out;
     color: white;
-    
+
     &:hover {
       transform: rotateY(360deg);
     }
-
   }
 
   @keyframes rotate {
@@ -43,7 +42,6 @@
       transform: rotateX(360deg);
     }
   }
-
 }
 
 .skills-bar {
@@ -56,9 +54,9 @@
   font-size: 24px;
   color: rgb(236, 234, 234);
   text-shadow: 
-  0 0 5px #fff,
-  0 0 30px #ffbf00,
-  0 0 40px #ffbf00,
+    0 0 5px #fff,
+    0 0 30px #ffbf00,
+    0 0 40px #ffbf00;
 }
 
 .skills-figma-line,
@@ -67,7 +65,7 @@
 .skills-css-line,
 .skills-javascript-line,
 .skills-python-line,
-.skills-git-line{
+.skills-git-line {
   position: relative;
   display: block;
   height: 5px;
@@ -78,13 +76,14 @@
   transform-origin: left;
   margin-left: 20%;
 }
+
 .skills-figma-line span,
 .skills-html-line span,
 .skills-react-line span,
 .skills-css-line span,
 .skills-javascript-line span,
 .skills-python-line span,
-.skills-git-line span{
+.skills-git-line span {
   height: 100%;
   background-color: #ffbf00;
   position: absolute;
@@ -100,37 +99,37 @@
   }
 }
 
-.skills-figma-line span{
+.skills-figma-line span {
   width: 75%;
   animation-delay: 0s;
 }
 
-.skills-react-line span{
+.skills-react-line span {
   width: 75%;
   animation-delay: 0.5s;
 }
 
-.skills-html-line span{
+.skills-html-line span {
   width: 90%;
   animation-delay: 1s;
 }
 
-.skills-css-line span{
+.skills-css-line span {
   width: 87%;
   animation-delay: 1s;
 }
 
-.skills-javascript-line span{
+.skills-javascript-line span {
   width: 84%;
   animation-delay: 1s;
 }
 
-.skills-python-line span{
+.skills-python-line span {
   width: 66%;
   animation-delay: 1s;
 }
 
-.skills-git-line span{
+.skills-git-line span {
   width: 73%;
   animation-delay: 1s;
 }
@@ -141,19 +140,19 @@
 .skills-css-line span::after,
 .skills-javascript-line span::after,
 .skills-python-line span::after,
-.skills-git-line span::after{
+.skills-git-line span::after {
   position: absolute;
   padding: 1px 8px;
   background-color: #ffbf00;
   color: #081b29;
   text-shadow: 
-  0 0 5px #fff,
-  0 0 10px #fff,
-  0 0 20px #fff,
-  0 0 30px #ffbf00,
-  0 0 40px #ffbf00,
-  0 0 50px #ffbf00,
-  0 0 60px #ffbf00;
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 30px #ffbf00,
+    0 0 40px #ffbf00,
+    0 0 50px #ffbf00,
+    0 0 60px #ffbf00;
   font-size: 12px bold;
   border-radius: 3px;
   top: -28px;
@@ -162,32 +161,31 @@
   opacity: 0;
 }
 
-.skills-figma-line span::after{
+.skills-figma-line span::after {
   content: "75%";
 }
 
-.skills-react-line span::after{
+.skills-react-line span::after {
   content: "75%";
 }
 
-.skills-html-line span::after{
+.skills-html-line span::after {
   content: "90%";
-  
 }
 
-.skills-css-line span::after{
+.skills-css-line span::after {
   content: "87%";
 }
 
-.skills-javascript-line span::after{
+.skills-javascript-line span::after {
   content: "84%";
 }
 
-.skills-python-line span::after{
+.skills-python-line span::after {
   content: "66%";
 }
 
-.skills-git-line span::after{
+.skills-git-line span::after {
   content: "73%";
 }
 
@@ -197,7 +195,7 @@
 .skills-css-line::before,
 .skills-javascript-line::before,
 .skills-python-line::before,
-.skills-git-line::before{
+.skills-git-line::before {
   position: absolute;
   width: 0;
   height: 0;
@@ -211,27 +209,29 @@
   opacity: 0;
 }
 
-@keyframes showText{
-  100%{
+@keyframes showText {
+  100% {
     opacity: 1;
   }
 }
 
-.react-icon{
+.react-icon {
   color: white;
 }
 
 @media (max-width: 768px) {
+  .skills{
+    margin-top: 100px;
+  }
+  .skills-title {
+    font-size: 53px;
+  }
+
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     margin-left: 0;
     padding: 20px;
-  }
-
-  .skills-title {
-    font-size: 53px;
-    margin-top: 100px;
   }
 
   .skill-icon {
