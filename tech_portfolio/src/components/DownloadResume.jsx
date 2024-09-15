@@ -1,5 +1,5 @@
 import React from 'react'
-import Resume from '../resumefile/Tyeisha T. Stroud Resume.docx.pdf'
+import Resume from '../resumefile/Tyeisha T. Stroud Resume.pdf'
 
 const DownloadResume = () => {
   return (
